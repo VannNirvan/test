@@ -1,0 +1,22 @@
+#include "functions_codes.h" 
+
+void main(void){ 
+    mcu_initialization();
+Label_0:
+    while(1){
+    Label_1:
+        if(rc(F1_KEY) == TRUE){
+        Label_2:
+            dc_motor(LEFT_MOTOR_1, FORWARD_DIRECTION, 2);
+            dc_motor(RIGHT_MOTOR_1, FORWARD_DIRECTION, 2);
+            
+        }
+    Label_4:
+        if(rc(F2_KEY) == TRUE){
+        Label_5:
+            dc_motor(LEFT_MOTOR_1, STOP_DIRECTION, 0);
+            dc_motor(RIGHT_MOTOR_1, STOP_DIRECTION, 0);
+            
+        }
+    }
+}
